@@ -49,6 +49,7 @@ pipeline {
             steps{
                 script {
                     sh"""
+                    echo "Manoj@8310" | docker login -u "manojshetty2021" --Manoj@8310-stdin
                     docker tag netflix ${DOCKERHUB_USERNAME}/netflix
                     docker push ${DOCKERHUB_USERNAME}/netflix
                     """
