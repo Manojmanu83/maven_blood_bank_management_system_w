@@ -49,7 +49,7 @@ pipeline {
             steps{
                 script {
                     sh"""
-                    docker tag phonepe ${DOCKERHUB_USERNAME}/netflix
+                    docker tag netflix ${DOCKERHUB_USERNAME}/netflix
                     docker push ${DOCKERHUB_USERNAME}/netflix
                     """
                 }
